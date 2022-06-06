@@ -1,0 +1,6 @@
+a=input()
+a=a.split()
+ma=max(a[len(a)-1])
+mi=min(a[0])
+print(mi,end=" ")
+print(ma,end=" ")
