@@ -1,19 +1,19 @@
-a=input()
-a=a.lower()
-a=a.split()
-x={'a','e','i','o','u'}
-l=[];mi=0;v=0
-for i in a:
+s=input().split()
+mi=10000;b=0
+for i in s:
     c=0
-    v+=1
     for j in i:
-        if j in x:
+        if j in 'aeiou':
             c+=1
-    if v==1:
+    if c<mi:
         mi=c
-    if c<=mi:
-        mi=c
-        l.append(mi)
-print(l.count(mi))
+for i in s:
+    c=0
+    for j in i:
+        if j in 'aeiou':
+            c+=1
+    if c==mi:
+        b+=1
+print(b)
     
-        
+    
