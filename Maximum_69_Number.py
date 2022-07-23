@@ -1,11 +1,9 @@
 n=int(input())
 n=str(n)
-l=[]
-for i in n:
-    l.append(i)
-for i in range(len(l)):
-    if l[i]=='6':
-        l[i]=9
+n=list(n)
+for i in range(len(n)):
+    if n[i]=='6':
+        n[i]=9
         break
-for i in l:
+for i in n:
     print(i,end="")
